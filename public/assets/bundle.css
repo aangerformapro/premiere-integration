@@ -1,84 +1,134 @@
+
+/** Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Lexend+Deca&display=swap');
 
+html, *{
+    font-family: 'Lexend Deca';
+}
 
 body{
-   background: #0A0C1B;
-   display: flex;
-   align-items: center;
-  justify-content: center;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: #0A0C1B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+
+img{
+    width:100%;   
 }
 
 main{
     background:#1C1938;
+    border-radius:10px;
     display: flex;
 }
-section{
-    padding: 10%;
-}
-h1{
+
+main h1{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
-    text-align: center;
     letter-spacing: -2.5px;
     color: #FEFFFF;
+    margin: 5%;
 }
 
-h1 mark{
+main h1 mark{
     background:none;
     color: #A65BD7;
 }
 
-p{
-    font-family: 'Lexend Deca';
+main p{
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 133%;
-    text-align: center;
     color: #FFFFFF;
+    margin: 5%;
 }
 
-.picture img{
-    width:100%;
+
+
+
+main section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+
+main .picture{
+    display: flex;
+    position: relative;
+}
+
+/** image mask */
+main .picture::after{
+    content: '';
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left:0;
+    background: rgba(166, 91, 215, 0.7);
+}
+
+
+
+
 
 @media only screen and (max-width: 992px){
-    body{
-        padding: 10%;
-        
-    }
+   
     main{
         max-width: 100%;
-        position: relative;
-        border-radius: 0px 0px 10px 10px;
         flex-direction: column-reverse;
+        margin: auto 10%;
+    }
+
+    main .picture, main .picture::after{
+        border-radius: 10px 10px 0px 0px;
+        max-height: 234px;
+    }
+    
+    main p, main h1{
+        text-align: center;
+    }
+    .computer-only{
+        display: none !important;
     }
    
-    
-    
-    
 }
 @media only screen and (min-width: 992px){
     
-    
+    h1{
+        font-size: 36px;
+    }
+      
     
     main{
-        border-radius: 10px 0px 0px 10px;
-        
-        flex-direction: row;
-        
-        
+        width: 960px;
     }
     
-    .picture{
-        height: 100%;
+    
+    main section, main .picture{
+        width:480px;
     }
     
+    main .picture, main .picture::after{
+        border-radius: 0px 10px 10px 0px;
+    }
+    
+    .mobile-only{
+        display: none !important;
+    }
+   
 }
+
+
 /**
 
 rectangle 3
