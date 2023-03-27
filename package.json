@@ -1,0 +1,11 @@
+{
+    "name": "premiere-integration",
+    "version": "1.0.0",
+    "description": "1ere integration HTML/CSS",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "serve": "php -S 0.0.0.0:9000 -t public"
+    },
+    "author": "Aymeric Anger"
+}

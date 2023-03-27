@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Lexend+Deca&display=swap');
+
+
+body{
+   background: #0A0C1B;
+   display: flex;
+   align-items: center;
+  justify-content: center;
+
+}
+
+main{
+    background:#1C1938;
+    display: flex;
+}
+section{
+    padding: 10%;
+}
+h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -2.5px;
+    color: #FEFFFF;
+}
+
+h1 mark{
+    background:none;
+    color: #A65BD7;
+}
+
+p{
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 133%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.picture img{
+    width:100%;
+}
+
+@media only screen and (max-width: 992px){
+    body{
+        padding: 10%;
+        
+    }
+    main{
+        max-width: 100%;
+        position: relative;
+        border-radius: 0px 0px 10px 10px;
+        flex-direction: column-reverse;
+    }
+   
+    
+    
+    
+}
+@media only screen and (min-width: 992px){
+    
+    
+    
+    main{
+        border-radius: 10px 0px 0px 10px;
+        
+        flex-direction: row;
+        
+        
+    }
+    
+    .picture{
+        height: 100%;
+    }
+    
+}
+/**
+
+rectangle 3
+
+position: absolute;
+width: 280px;
+height: 234px;
+left: 19px;
+top: 57px;
+
+background: rgba(166, 91, 215, 0.7);
+border-radius: 10px 10px 0px 0px;
+*/
+
+/** Rectangle 1 main
+
+position: absolute;
+width: 282px;
+height: 396px;
+left: 18px;
+top: 291px;
+
+background: #1C1938;
+border-radius: 0px 0px 10px 10px;
+
+*/
+/**
+ Version Ordinateur 
+
+
+position: relative;
+width: 1440px;
+height: 1026px;
+
+background: #0A0C1B;
+*/
+
+/* Mobile 
+
+
+position: relative;
+width: 320px;
+height: 745px;
+
+background: #0A0C1B;
+*/
+
+
+/* Ma première intégration HTML / CSS 
+
+
+#A65BD7
+
+position: absolute;
+width: 224px;
+height: 98px;
+left: 47px;
+top: 325px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-align: center;
+letter-spacing: -2.5px;
+
+color: #FEFFFF;
+*/
+
+
