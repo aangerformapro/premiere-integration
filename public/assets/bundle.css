@@ -5,7 +5,6 @@
 html, *{
     font-family: 'Lexend Deca';
 }
-
 body{
     min-height: 100vh;
     margin: 0 auto;
@@ -14,18 +13,14 @@ body{
     align-items: center;
     justify-content: center;
 }
-
-
 img{
     width:100%;   
 }
-
 main{
     background:#1C1938;
     border-radius:10px;
     display: flex;
 }
-
 main h1{
     font-family: 'Inter';
     font-style: normal;
@@ -36,12 +31,10 @@ main h1{
     color: #FEFFFF;
     margin: 5%;
 }
-
 main h1 mark{
     background:none;
     color: #A65BD7;
 }
-
 main p{
     font-style: normal;
     font-weight: 400;
@@ -50,17 +43,11 @@ main p{
     color: #FFFFFF;
     margin: 5%;
 }
-
-
-
-
 main section{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
-
 main .picture{
     display: flex;
     position: relative;
@@ -77,10 +64,6 @@ main .picture::after{
     background: rgba(166, 91, 215, 0.7);
 }
 
-
-
-
-
 @media only screen and (max-width: 992px){
    
     main{
@@ -88,12 +71,10 @@ main .picture::after{
         flex-direction: column-reverse;
         margin: auto 10%;
     }
-
     main .picture, main .picture::after{
         border-radius: 10px 10px 0px 0px;
         max-height: 234px;
     }
-    
     main p, main h1{
         text-align: center;
     }
@@ -107,96 +88,20 @@ main .picture::after{
     h1{
         font-size: 36px;
     }
-      
-    
     main{
         width: 960px;
-    }
-    
-    
+    }   
     main section, main .picture{
         width:480px;
     }
-    
     main .picture, main .picture::after{
         border-radius: 0px 10px 10px 0px;
     }
-    
     .mobile-only{
         display: none !important;
     }
    
 }
 
-
-/**
-
-rectangle 3
-
-position: absolute;
-width: 280px;
-height: 234px;
-left: 19px;
-top: 57px;
-
-background: rgba(166, 91, 215, 0.7);
-border-radius: 10px 10px 0px 0px;
-*/
-
-/** Rectangle 1 main
-
-position: absolute;
-width: 282px;
-height: 396px;
-left: 18px;
-top: 291px;
-
-background: #1C1938;
-border-radius: 0px 0px 10px 10px;
-
-*/
-/**
- Version Ordinateur 
-
-
-position: relative;
-width: 1440px;
-height: 1026px;
-
-background: #0A0C1B;
-*/
-
-/* Mobile 
-
-
-position: relative;
-width: 320px;
-height: 745px;
-
-background: #0A0C1B;
-*/
-
-
-/* Ma première intégration HTML / CSS 
-
-
-#A65BD7
-
-position: absolute;
-width: 224px;
-height: 98px;
-left: 47px;
-top: 325px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 30px;
-line-height: 36px;
-text-align: center;
-letter-spacing: -2.5px;
-
-color: #FEFFFF;
-*/
 
 
