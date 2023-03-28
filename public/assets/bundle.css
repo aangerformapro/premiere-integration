@@ -89,10 +89,10 @@ main .picture::after{
         font-size: 36px;
     }
     main{
-        width: 960px;
+        width: 66%;
     }   
     main section, main .picture{
-        width:480px;
+        width:50%;
     }
     main .picture, main .picture::after{
         border-radius: 0px 10px 10px 0px;
