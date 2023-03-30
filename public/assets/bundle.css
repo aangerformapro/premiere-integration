@@ -1,7 +1,8 @@
 /** Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Lexend+Deca&display=swap');
 
-html, * {
+html,
+* {
     font-family: 'Lexend Deca';
     box-sizing: border-box;
 }
@@ -26,7 +27,8 @@ main {
     text-align: center;
     max-width: 100%;
     flex-direction: column-reverse;
-    margin: auto 10%;
+    margin: 0 10%;
+    overflow: hidden;
 }
 
 main h1 {
@@ -53,7 +55,7 @@ main p {
     color: #FFFFFF;
 }
 
-main section {
+main .content {
     padding: 10%;
     display: flex;
     flex-direction: column;
@@ -65,42 +67,39 @@ main .picture {
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 10px 10px 0px 0px;
     height: 234px;
     background-image:
-        linear-gradient(rgba(166, 91, 215, 0.7), rgba(166, 91, 215, 0.7)),
+        linear-gradient(#a55cd6b3, #a65bd7b3),
         url('./pictures/mobile.png');
 }
 
-
-
-
 @media only screen and (min-width: 992px) {
 
-   
+
 
     main {
         width: 66.66%;
         text-align: left;
         flex-direction: row;
+        margin: auto 10%;
     }
-    
+
     main h1 {
         font-size: 36px;
     }
-    
-    main section {
+
+    main .content {
         padding: 20% 7%;
         width: 50%;
+        box-sizing: border-box;
     }
+
     main .picture {
         background-image:
-            linear-gradient(rgba(166, 91, 215, 0.7), rgba(166, 91, 215, 0.7)),
+            linear-gradient(#a65bd7b3, #a65bd7b3),
             url('./pictures/computer.png');
-        border-radius: 0px 10px 10px 0px;
-        padding: 20% 7%;
         width: 50%;
         height: unset;
     }
-    
+
 }
